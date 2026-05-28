@@ -7,6 +7,8 @@ Gazebo (Ignition/Gazebo Sim) models and worlds for benchmarking LiDAR-camera ext
 IEEE Transactions on Intelligent Transportation Systems, 2022  
 **\[[Paper](https://ieeexplore.ieee.org/abstract/document/9733276)\] \[[Preprint](https://arxiv.org/abs/2101.04431)\]**
 
+> This fork is a stripped down version of the original work which is available [here](https://github.com/beltransen/velo2cam_gazebo)
+
 ![gazebo screenshot](screenshots/velo2cam_calibration_setup.png)
 
 ## Package: `velo2cam_gz_worlds`
@@ -21,7 +23,7 @@ velo2cam_gz_worlds/
 │   ├── calibration_bigqr_pattern/   # Large QR calibration target
 │   ├── checkerboard_5_8_0_2/        # 5×8 checkerboard (0.2 m squares)
 │   ├── checkerboard_6_8_0_2/        # 6×8 checkerboard (0.2 m squares)
-│   └── chess_plane/                 # Chess plane for KIT/Matlab toolboxes
+│   └── chess_plane/                 # Chess plane for KIT/
 └── worlds/
     └── calibration_scene.world      # Default calibration scene
 ```
@@ -77,7 +79,8 @@ Reference calibration target models by name in your own world files:
 
 ## Citation
 
-If you use this work, please cite:
+This work is derived from the [original work](https://github.com/beltransen/velo2cam_gazebo) by Beltrán et al.
+If you use this package, consider citing the original work:
 
 ```bibtex
 @article{beltran2022,
@@ -89,4 +92,3 @@ If you use this work, please cite:
 }
 ```
 
-A previous version of this tool is available [here](https://github.com/beltransen/velo2cam_calibration/tree/v1.0) and was described on this [paper](https://doi.org/10.1109/ITSC.2017.8317829). 
