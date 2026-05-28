@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>velo2cam_gz_worlds</name>
+  <version>2.0.0</version>
+  <description>
+    Gazebo models and worlds for benchmarking LiDAR-camera extrinsic calibration algorithms.
+    Includes Velodyne LiDAR models (VLP-16, HDL-32, HDL-64), camera models (Blackfly S, Bumblebee XB3),
+    and calibration target models with associated simulation worlds.
+  </description>
+
+  <maintainer email="jbeltran@ing.uc3m.es">Jorge Beltran</maintainer>
+  <license>GPL-2.0-only</license>
+  <url type="website">https://github.com/beltransen/velo2cam_gazebo</url>
+  <author>Jorge Beltran</author>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>ros_gz_sim</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
